@@ -1,0 +1,14 @@
+{
+    "name": "football-ch-api",
+    "version": "0.0.1",
+    "description": "Web Scraper, Normalizer and API for Swiss football data",
+    "main": "server.js",
+    "author": "deniaz",
+    "dependencies": {
+        "express": "latest",
+        "request": "latest",
+        "cheerio": "latest",
+        "mongojs": "latest",
+        "hbs": "latest"
+    }
+}

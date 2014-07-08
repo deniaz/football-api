@@ -1,0 +1,54 @@
+@import "compass/css3/border-radius",
+        "compass/css3/transition";
+
+.mod-main-nav {
+    display: block;
+    float: left;
+    font-size: 1.4em;
+    width: 80%;
+    padding: 0 10%;
+
+    ul {
+        float: right;
+
+        li {
+            float: left;
+            margin-left: 20px;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+            &.login {
+                margin-left: 80px;
+            }
+
+            a {
+                color: #FFF;
+                text-decoration: none;
+                text-transform: uppercase;
+                border-bottom: none;
+                font-weight: 400;
+
+                &:hover {
+                    text-decoration: none;
+                    border-bottom: 1px dotted $clouds;
+                }
+
+                &.button {
+                    text-decoration: none;
+                    border: 1px solid #FFF;
+                    @include border-radius(3px);
+                    padding: 8px 12px;
+
+                    @include transition(background 0.2s ease-in-out);
+
+                    &:hover {
+                        border-bottom: 1px solid #FFF;
+                        background: $nephritis;
+                    }
+                }
+            }
+        }
+    }
+}

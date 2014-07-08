@@ -1,0 +1,7 @@
+@import "compass/utilities/general/clearfix";
+
+header {
+    background: $emerald;
+    @include clearfix;
+    padding: 40px 0;
+}
