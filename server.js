@@ -10,9 +10,7 @@ var express = require('express'),
 app.set('view engine', 'html');
 app.engine('html', hbs.__express);
 
-app.use(express.static(__dirname + '/stylesheets'));
-app.use(express.static(__dirname + '/javascript'));
-app.use(express.static(__dirname + '/images'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
     res.render('index');
