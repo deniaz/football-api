@@ -9,6 +9,7 @@
         "request": "latest",
         "cheerio": "latest",
         "mongojs": "latest",
-        "hbs": "latest"
+        "hbs": "latest",
+        "commander": "latest"
     }
 }
