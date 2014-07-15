@@ -17,58 +17,45 @@
         margin-bottom: 1.8em;
     }
 
-    label {
-        font-size: 2.4em;
-        color: $nephritis;
-    }
+    form {
+        label {
+            .label-text {
+                &.is-hidden {
+                    display: none;
+                }
+            }
 
-    .controls {
-        position: relative;
-        width: 696px;
-        margin: 0 auto;
-
-        input[type="email"],
-        input[type="text"] {
-            outline: none;
-            border: none;
-            background: $nephritis;
-            display: block;
-            margin: .4em auto 0 auto;
-            font-size: 1.5em;
-            color: #FFF;
-            padding: 24px 48px;
-            width: 600px;
-            position: relative;
-        }
-
-        .continue {
-            border: none;
-            background: transparent;
-            color: darken($nephritis, 20%);
-            font-size: 2em;
-            position: absolute;
-            outline: none;
-            top: 16px;
-            right: 18px;
-            cursor: pointer;
-
-            &:hover {
-                color: darken($nephritis, 25%);
+            input {
+                background: #FFF;
+                border-radius: 3px;
+                border: 1px solid $silver;
+                width: 240px;
+                height: 48px;
+                padding: 0 14px;
+                font-size: 1.4em;
             }
         }
 
-        .submission-progress {
-            background: lighten($nephritis, 20%);
-            height: 8px;
-            width: 696px;
-            margin: 0 auto;
-            position: relative;
+        button,
+        input[type="submit"] {
+            background: $nephritis;
+            border-radius: 3px;
+            border: 1px transparent;
+            width: 160px;
+            height: 48px;
+            padding: 0 14px;
+            font-size: 1.4em;
+            font-weight: 300;
+            color: #FFF;
+            text-transform: uppercase;
+            cursor: pointer;
 
-            .inner {
-                position: absolute;
-                left: 0;
+            &:hover {
+                background: darken($nephritis, 10%);
+            }
+
+            &:active {
                 background: darken($nephritis, 20%);
-                height: 8px;
             }
         }
     }

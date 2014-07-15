@@ -47,19 +47,18 @@
         </header>
         <main class="mod-registration">
             <h1>Swiss Football API</h1>
-            <h2>Aggregated data about the Swiss Super League provided as a RESTful API.</h2>
+            <h2>Aggregated data about the Swiss Super League provided as a JSON API.</h2>
 
-            <form>
+            <form action="/login" method="post">
                 <label>
-                    Enter your email address to get started
-                    <div class="controls">
-                        <input type="email" maxlength="255" autofocus autocomplete="off">
-                        <button class="continue" type="submit"><i class="fa fa-arrow-right"></i></button>
-                        <div class="submission-progress">
-                            <div class="inner" style="width: 0%;"></div>
-                        </div>
-                    </div>
+                    <span class="label-text is-hidden">E-Mail</span>
+                    <input type="text" name="email" placeholder="E-Mail" autofocus>
                 </label>
+                <label>
+                    <span class="label-text is-hidden">Password</span>
+                    <input type="password" name="password" placeholder="Password">
+                </label>
+                <input type="submit" value="Create Account">
             </form>
         </main>
 
@@ -69,22 +68,22 @@
                 <img src="/images/portrait.png" class="portrait-img" alt="Robert Vogt">
                 <h3>Robert Vogt</h3>
                 <p class="description">
-                    Web enthusiast, student &amp; Frontend Engineer at Namics.
+                    Web enthusiast, student &amp; Frontend Engineer at <a href="http://www.namics.com" target="_blank">Namics</a>.
                 </p>
                 <nav class="social-nav">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="http://github.com/deniaz" target="_blank">
                                 <i class="fa fa-github-alt"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="http://cheekyowl.com" target="_blank">
                                 <i class="fa fa-rss"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="http://twitter.com/_deniaz" target="_blank">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>
