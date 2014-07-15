@@ -1,15 +1,22 @@
 {
-    "name": "football-ch-api",
-    "version": "0.0.1",
-    "description": "Web Scraper, Normalizer and API for Swiss football data",
-    "main": "server.js",
-    "author": "deniaz",
-    "dependencies": {
-        "express": "latest",
-        "request": "latest",
-        "cheerio": "latest",
-        "mongojs": "latest",
-        "hbs": "latest",
-        "commander": "latest"
-    }
+  "name": "football-ch-api",
+  "version": "0.0.1",
+  "description": "Web Scraper, Normalizer and API for Swiss football data",
+  "main": "server.js",
+  "author": "deniaz",
+  "dependencies": {
+    "express": "latest",
+    "request": "latest",
+    "cheerio": "latest",
+    "mongojs": "latest",
+    "hbs": "latest",
+    "commander": "latest",
+    "passport": "latest",
+    "passport-local": "latest",
+    "bcrypt": "latest"
+  },
+  "devDependencies": {
+    "body-parser": "^1.4.3",
+    "hat": "0.0.3"
+  }
 }
